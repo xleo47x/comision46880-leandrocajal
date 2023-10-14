@@ -1,0 +1,45 @@
+.navbar{
+    background-color: #333;
+    opacity: 0.95;
+    .navbar-brand:hover{
+        animation: pulse;
+        animation-duration: 0.5s;
+    }
+    .navbar-nav{
+        align-items: center;
+        gap: 10px;
+        .nav-link {
+            color: #ffff;
+            &::after {
+                transition: all 0.3s;
+            }
+            &:hover {
+                color: greenyellow;
+                &::after {
+                    content: '';
+                    height: 2px;
+                    width: 100%;
+                    background-color: greenyellow;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+        .active{
+            color: greenyellow !important;
+        }
+        .btn-res{
+            background-color: green;
+            color: #ffff;
+            &:hover{
+                background-color: transparent;
+                color: greenyellow;
+                border: solid 1px greenyellow;
+            }
+        }
+        .container-btn{
+            width: 100px;
+        }
+    }
+}

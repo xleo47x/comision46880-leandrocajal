@@ -4,4 +4,106 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  opacity: 0.95;
+}
+.navbar .navbar-brand:hover {
+  animation: pulse;
+  animation-duration: 0.5s;
+}
+.navbar .navbar-nav {
+  align-items: center;
+  gap: 10px;
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link::after {
+  transition: all 0.3s;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: greenyellow;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: greenyellow;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.navbar .navbar-nav .active {
+  color: greenyellow !important;
+}
+.navbar .navbar-nav .btn-res {
+  background-color: green;
+  color: white;
+}
+.navbar .navbar-nav .btn-res:hover {
+  background-color: transparent;
+  color: greenyellow;
+  border: solid 1px greenyellow;
+}
+.navbar .navbar-nav .container-btn {
+  width: 100px;
+}
+
+#footer {
+  background-color: #435334;
+  padding-top: 50px;
+}
+#footer .main-footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+  color: #ffffff;
+  width: 100%;
+}
+#footer .main-footer .footer-left {
+  width: 50%;
+}
+#footer .main-footer .footer-right .social p {
+  display: flex;
+  justify-content: end;
+  font-size: 30px;
+}
+#footer .main-footer .footer-right .social .social-icons {
+  display: flex;
+  justify-content: end;
+  font-size: 24px;
+  color: #333;
+  gap: 10px;
+}
+#footer .main-footer .footer-right .social .social-icons i {
+  font-size: 30px;
+  color: #ffffff;
+  padding: 10px;
+}
+#footer .main-footer .footer-right .direction {
+  display: flex;
+  gap: 8px;
+}
+#footer .main-footer .footer-right .direction .location-icon {
+  font-size: 15px;
+}
+#footer .bot-footer {
+  display: flex;
+  background-color: #2a3321;
+  color: #979797;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+#footer .bot-footer .rights {
+  font-size: 12px;
+}
+#footer .bot-footer .design-by span {
+  font-size: 15px;
+  padding-right: 120px;
+}
+
+/*# sourceMappingURL=style.css.map */
