@@ -61,6 +61,12 @@
     color: transparent;
 }/* Fin de header*/
 
+/* Carousel */
+.carousel-top{
+    padding-top: 85px;
+}
+
+
 /*Banner*/
 .banner-title h2{
     padding-top: 150px;
@@ -76,15 +82,11 @@
 }
 /*Fin de banner*/
 
-/* Carousel */
-.carousel-top{
-    padding-top: 85px;
-}
 
 
 /* Primera seccion de mi index */
 .description{
-    padding: 100px 0px 100px 0px;
+    padding: 6.25rem 0px;
 }
 .description-title h1{
     font-size: 40px;   
@@ -156,11 +158,6 @@
     flex-wrap: nowrap;
     position: relative;
     z-index: 1;
-}
-.page-title{
-    font-size: 30 px;
-    text-align: center;
-    padding: 10px;
 }
 .galeria-index-link{
     width: 30%;
@@ -259,24 +256,7 @@
 .card-inside-btn button{
     border-radius: 10px;
 }
-.ver-mas-btn{
-    background-color: #435334;
-    padding: 9px 20px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #FAF1E4;
-    border: none;
-    border-radius: 8 px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s, color 0.3s;
-    cursor: pointer;
-    border: 1px solid transparent;
-}
-.ver-mas-btn:hover {
-    background-color: transparent;
-    color: #435334;
-    border: #435334 solid 1px;
-}
+
 /*Fin de seccion de habitaciones*/
 
 
@@ -321,7 +301,6 @@
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-
 }
 .carousel-caption{
     position: absolute;
@@ -335,7 +314,6 @@
     font-size: 25px;
     font-weight: 400;
     text-transform: capitalize;
-
 }
 .testimonial-icon{
     font-size: 40px;
@@ -478,7 +456,8 @@
     padding: 0px 15px 15px 15px;
     font-size: 15px;
     font-weight: 500; 
-}/*Fin de pagina Info*/
+}
+/*Fin de pagina Info*/
 
 
 /* Pagina Contacto*/
@@ -550,7 +529,8 @@
 .serv-items i{
     font-size: 30px;
     color: #979797;
-}/*Fin de pagina Habitaciones*/
+}
+/*Fin de pagina Habitaciones*/
 
 
 /*Pagina de Reservar*/
@@ -564,8 +544,7 @@
     padding: 100px 0;
     max-width: 900px;
 }
-.formulario-reservar,
-.formulario-contact {
+.formulario-container {
     width: 100%;
     display: flex;
     flex-direction: column;

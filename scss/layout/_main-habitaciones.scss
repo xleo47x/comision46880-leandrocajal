@@ -1,0 +1,21 @@
+
+.container{
+    .card{
+        .col-md-6{
+            .suite-img{
+                object-fit: cover;
+            }
+            .card-body{
+                .serv-items{
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    i{
+                        font-size: 30px;
+                        color: #979797;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color:rgb(255, 255, 255);
+    max-width: 850px;
+    .formulario-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px; 
+        background-color:#ffffff; 
+        color: #333;
+        font-size: 18px;
+        backdrop-filter: blur(10px);
+        .form-title{
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            font-family: 'Roboto', cursive;
+            text-transform: uppercase;
+        }
+        .input-group{
+            display: flex;
+            flex-direction: column;
+            input{
+                &:not(.btn-form){
+                    background-color:#ffffff;
+                    padding: 16px 22px; 
+                    margin-bottom: 25px;
+                    font-size: 18px;
+                    display: flex;
+                    border: solid 2px #979797;
+                }
+                &::placeholder{
+                    color:#979797;
+                    font-size: 16px;
+                    font-weight:lighter;
+                    text-transform: uppercase;
+                }
+            }
+            textarea{
+                &:not(.btn-form){
+                    background-color:#ffffff;
+                    padding: 16px 22px; 
+                    margin-bottom: 25px;
+                    font-size: 18px;
+                    display: flex;
+                    border: solid 2px #979797;
+                }
+                &::placeholder{
+                    color:#979797;
+                    font-size: 16px;
+                    font-weight:lighter;
+                    text-transform: uppercase;
+                }
+            }
+            .btn-form {
+                background-color:#ffffff;
+                color:green;
+                padding: 10px 10px;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s;
+                font-size: 20px;
+                font-weight: 600;
+                border: solid 2px green;
+                text-transform: uppercase;
+                width: 120px;
+                align-self: flex-end;
+                &:hover {
+                    background-color:green;
+                    color:#ffffff;
+                }
+            }
+        }
+    }
+}
+
+
+
+

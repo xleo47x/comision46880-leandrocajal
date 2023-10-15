@@ -1,6 +1,22 @@
-@import "../scss/base/reset";
+/*Fuentes*/
+@import "./base/typo";
+/*Reset*/
+@import "./base/reset";
+@import"./components/whatsapp";
 
+/*header*/
+@import "./layout/header";
 
-@import "../scss/layout/header";
+/*main index*/
+@import "./layout/main-index";
+/*main info*/
+@import "./layout/main-info";
+/*main habitaciones*/
+@import "./layout/main-habitaciones";
+/*main contacto*/
+@import "./layout/main-contacto";
+/*main reservar*/
+@import "./layout/main-reservar";
+/*footer*/
 
-@import "../scss/layout/footer"
+@import "../scss/layout/footer";
