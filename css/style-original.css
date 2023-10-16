@@ -594,16 +594,6 @@
     .description-img{
         height: 450px;
     }
-    .galeria-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .galeria-item:nth-child(2){
-        grid-column-start: span 1;
-    }
-    .galeria-item:nth-child(5){
-        grid-column-start: span 2;
-        grid-row-start: span 1;
-    }
 }
 
 @media (max-width: 1024px){
@@ -633,9 +623,6 @@
 }
 
 @media (max-width: 900px){
-    .index-main{
-        height: 40vh;
-    }
     .description-title,
     .description-title h1,
     .description-title h2{

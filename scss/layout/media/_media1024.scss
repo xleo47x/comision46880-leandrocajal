@@ -1,0 +1,30 @@
+.description{
+    .description-container{
+        gap: 40px;
+        .description-title {
+            h1{
+                font-size: 30px;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+        .description-text{
+            font-size:14px ;
+            .leer-mas {
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+        .description-img{
+            height: 400px;
+        }
+    }
+}
+
+section.suites-title{
+    h4{
+        font-size: 30px;
+    }
+}

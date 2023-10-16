@@ -41,7 +41,6 @@
 }
 
 /*fin de whatsapp*/
-/*header*/
 .navbar {
   background-color: #333;
   opacity: 0.95;
@@ -89,7 +88,6 @@
   width: 100px;
 }
 
-/*main index*/
 /*Carrousel*/
 .carousel-top {
   padding-top: 85px;
@@ -332,7 +330,6 @@
   margin-right: 5px;
 }
 
-/*main info*/
 .header-main {
   height: 50vh;
   min-height: 300px;
@@ -383,7 +380,6 @@
   object-fit: cover;
 }
 
-/*main habitaciones*/
 .container .card .col-md-6 .suite-img {
   object-fit: cover;
 }
@@ -397,23 +393,18 @@
   color: #979797;
 }
 
-/*main contacto*/
 .contact-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: rgb(255, 255, 255);
-  max-width: 850px;
+  max-width: 800px;
 }
 .contact-container .formulario-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 50px;
-  background-color: #ffffff;
-  color: #333;
   font-size: 18px;
   backdrop-filter: blur(10px);
 }
@@ -442,7 +433,7 @@
   font-weight: lighter;
   text-transform: uppercase;
 }
-.contact-container .formulario-container .input-group textarea:not(.btn-form) {
+.contact-container .formulario-container .input-group textarea {
   background-color: #ffffff;
   padding: 16px 22px;
   margin-bottom: 25px;
@@ -467,14 +458,13 @@
   border: solid 2px green;
   text-transform: uppercase;
   width: 120px;
-  align-self: flex-end;
+  align-self: center;
 }
 .contact-container .formulario-container .input-group .btn-form:hover {
   background-color: green;
   color: #ffffff;
 }
 
-/*main reservar*/
 .contact-container {
   background-color: #ffffff;
   display: flex;
@@ -485,20 +475,61 @@
   padding: 100px 0;
   max-width: 900px;
 }
-.contact-container .formulario-container {
+.contact-container .formulario-reservar-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 50px;
   background-color: #ffffff;
-  color: #333;
-  font-size: 18px;
-  backdrop-filter: blur(10px);
 }
-.contact-container .formulario-container .input-group .date {
+.contact-container .formulario-reservar-container .form-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-family: "Roboto", cursive;
+  text-transform: uppercase;
+}
+.contact-container .formulario-reservar-container .input-group-reservar {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .formulario-reservar-container .input-group-reservar .date {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.contact-container .formulario-reservar-container .input-group-reservar .date label input {
+  background-color: #ffffff;
+  padding: 16px 22px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  display: flex;
+  border: solid 2px #979797;
+}
+.contact-container .formulario-reservar-container .input-group-reservar select {
+  background-color: #ffffff;
+  padding: 16px 22px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  display: flex;
+  border: solid 2px #979797;
+}
+.contact-container .formulario-reservar-container .input-group-reservar .btn-form {
+  background-color: #ffffff;
+  color: green;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 20px;
+  font-weight: 600;
+  border: solid 2px green;
+  text-transform: uppercase;
+  width: 120px;
+  align-self: center;
+}
+.contact-container .formulario-reservar-container .input-group-reservar .btn-form:hover {
+  background-color: green;
+  color: #ffffff;
 }
 
 .mapa {
@@ -513,7 +544,6 @@
   box-shadow: 7px 9px 30px 0px rgba(0, 0, 0, 0.5);
 }
 
-/*footer*/
 #footer {
   background-color: #141414;
   display: flex;
@@ -574,6 +604,92 @@
 #footer .bot-footer .design-by span {
   font-size: 15px;
   padding-right: 120px;
+}
+
+/*mediaqueri*/
+.galeria-index .galeria-index-link {
+  font-size: 60px;
+}
+
+/*container de la seccion description de mi index*/
+.description .description-container {
+  gap: 50px;
+}
+.description .description-container .description-img {
+  height: 450px;
+}
+
+.description .description-container {
+  gap: 40px;
+}
+.description .description-container .description-title h1 {
+  font-size: 30px;
+}
+.description .description-container .description-title h2 {
+  font-size: 20px;
+}
+.description .description-container .description-text {
+  font-size: 14px;
+}
+.description .description-container .description-text .leer-mas a {
+  font-size: 18px;
+}
+.description .description-container .description-img {
+  height: 400px;
+}
+
+section.suites-title h4 {
+  font-size: 30px;
+}
+
+.description .description-container .description-container-item .description-title {
+  gap: 10px;
+}
+.description .description-container .description-container-item .description-text p {
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+.description .description-container .description-img {
+  height: 300px;
+}
+
+.galeria-index .galeria-index-link {
+  font-size: 2.5rem;
+  width: 25%;
+  left: 37%;
+}
+.galeria-index .galeria-fotos {
+  width: 750px;
+}
+
+.suite-title {
+  font-size: 20px;
+}
+
+.card-container .cards {
+  height: 400px;
+  width: 280px;
+}
+.card-container .cards .index-card-title {
+  font-size: 18px;
+}
+.card-container .cards .card-inside a .card-inside-btn {
+  font-size: 16px;
+  padding: 7px 18px;
+}
+
+.testimonials .carousel .carousel-item .carousel-img {
+  top: 25%;
+}
+
+#footer .main-footer .footer-left p {
+  font-size: 16px;
+}
+#footer .main-footer .footer-right .social p {
+  font-size: 1rem;
+}
+#footer .main-footer .footer-right .social .social-icons a i {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

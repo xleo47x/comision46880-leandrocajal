@@ -4,19 +4,20 @@
 @import "./base/reset";
 @import"./components/whatsapp";
 
-/*header*/
 @import "./layout/header";
 
-/*main index*/
+
 @import "./layout/main-index";
-/*main info*/
 @import "./layout/main-info";
-/*main habitaciones*/
 @import "./layout/main-habitaciones";
-/*main contacto*/
 @import "./layout/main-contacto";
-/*main reservar*/
 @import "./layout/main-reservar";
-/*footer*/
+
 
 @import "../scss/layout/footer";
+
+/*mediaqueri*/
+@import "./layout/media/media1300";
+@import "./layout/media/media1200";
+@import "./layout/media/media1024";
+@import "./layout/media/media900"

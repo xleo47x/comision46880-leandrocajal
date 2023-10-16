@@ -7,20 +7,61 @@
     justify-content: center;
     padding: 100px 0;
     max-width: 900px;
-    .formulario-container{
+    .formulario-reservar-container{
         width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 50px; 
-    background-color:#ffffff; 
-    color: #333;
-    font-size: 18px;
-    backdrop-filter: blur(10px);
-        .input-group{
+        display: flex;
+        flex-direction: column;
+        padding: 50px; 
+        background-color:#ffffff; 
+        .form-title{
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            font-family: 'Roboto', cursive;
+            text-transform: uppercase;
+        }
+        .input-group-reservar{
+            display: flex;
+            flex-direction: column;
             .date{
                 display: flex;
                 justify-content:space-between;
                 flex-wrap: wrap;
+                label{
+                    input{
+                        background-color:#ffffff;
+                        padding: 16px 22px; 
+                        margin-bottom: 25px;
+                        font-size: 18px;
+                        display: flex;
+                        border: solid 2px #979797;
+                    }
+                }
+            }
+            select{
+                background-color:#ffffff;   
+                padding: 16px 22px; 
+                margin-bottom: 25px;
+                font-size: 18px;
+                display: flex;
+                border: solid 2px #979797;
+            }
+            .btn-form {
+                background-color:#ffffff;
+                color:green;
+                padding: 10px 10px;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s;
+                font-size: 20px;
+                font-weight: 600;
+                border: solid 2px green;
+                text-transform: uppercase;
+                width: 120px;
+                align-self: center;
+                &:hover {
+                    background-color:green;
+                    color:#ffffff;
+                }
             }
         }
     }
