@@ -11,8 +11,8 @@
                     gap: 20px;
                     flex-wrap: wrap;
                     i{
-                        font-size: 30px;
-                        color: #979797;
+                        font-size:map-get($font-size , l );
+                        color: $color-t-4;
                     }
                 }
             }

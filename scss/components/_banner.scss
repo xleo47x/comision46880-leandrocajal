@@ -2,17 +2,18 @@
     height: 50vh;
     min-height: 300px;
     display: flex;
+    @include flex(column,nowrap,center,center,10px);
     flex-direction: column;
     text-align: center;
     background-image: url('../assets/imgs/pool-2.jpg');
     background-size: cover;
     background-position: center;
     gap: 10px;
-    color: #Ffff;
+    color: $color-t-2;
     .banner-title {
         h2{
             padding-top: 150px;
-            font-size: 40px;
+            font-size: map-get($font-size , xl );
             border-color:#Ffff;
             font-family: 'Roboto', cursive;
             text-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.5);

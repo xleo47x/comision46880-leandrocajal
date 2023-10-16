@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #333;
+    background-color: $bg-color-1;
     opacity: 0.95;
     .navbar-brand:hover{
         animation: pulse;
@@ -9,18 +9,18 @@
         align-items: center;
         gap: 10px;
         .nav-link {
-            color: #ffff;
+            color: $color-t-2;
             position: relative;
             &::after {
                 transition: all 0.3s;
             }
             &:hover {
-                color: greenyellow;
+                color: $bg-color-2;
                 &::after {
                     content: '';
                     height: 2px;
                     width: 100%;
-                    background-color: greenyellow;
+                    background-color: $bg-color-2;
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -28,15 +28,15 @@
             }
         }
         .active{
-            color: greenyellow !important;
+            color: $bg-color-2 !important;
         }
         .btn-res{
-            background-color: green;
-            color: #ffff;
+            background-color:$bg-color-2;
+            color: $bg-color-1;
             &:hover{
                 background-color: transparent;
-                color: greenyellow;
-                border: solid 1px greenyellow;
+                color: $bg-color-2;
+                border: solid 1px $bg-color-2;
             }
         }
         .container-btn{

@@ -1,5 +1,7 @@
-.galeria-index{
-    .galeria-index-link{
-        font-size: 60px;
+@media (max-width:1300px){
+    .galeria-index{
+        .galeria-index-link{
+            font-size: map-get($font-size , uul );
+        }
     }
 }

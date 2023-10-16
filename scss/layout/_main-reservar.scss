@@ -1,5 +1,5 @@
 .contact-container{
-    background-color:#ffffff;
+    background-color:$color-t-2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,6 @@
         display: flex;
         flex-direction: column;
         padding: 50px; 
-        background-color:#ffffff; 
         .form-title{
             text-align: center;
             margin-bottom: 25px;
@@ -29,38 +28,38 @@
                 flex-wrap: wrap;
                 label{
                     input{
-                        background-color:#ffffff;
+                        background-color:$color-t-2;
                         padding: 16px 22px; 
                         margin-bottom: 25px;
-                        font-size: 18px;
+                        font-size: map-get($font-size , xs );
                         display: flex;
-                        border: solid 2px #979797;
+                        border: solid 2px $color-t-4;
                     }
                 }
             }
             select{
-                background-color:#ffffff;   
+                background-color:$color-t-2;   
                 padding: 16px 22px; 
                 margin-bottom: 25px;
-                font-size: 18px;
+                font-size: map-get($font-size , xs );
                 display: flex;
-                border: solid 2px #979797;
+                border: solid 2px $color-t-4;
             }
             .btn-form {
-                background-color:#ffffff;
-                color:green;
+                background-color:$color-t-2;
+                color:$color-t-1;
                 padding: 10px 10px;
                 cursor: pointer;
                 transition: background-color 0.3s, color 0.3s;
-                font-size: 20px;
+                font-size: map-get($font-size , s );
                 font-weight: 600;
-                border: solid 2px green;
+                border: solid 2px $color-t-1;
                 text-transform: uppercase;
                 width: 120px;
                 align-self: center;
                 &:hover {
-                    background-color:green;
-                    color:#ffffff;
+                    background-color:$color-t-1;
+                    color:$color-t-2;
                 }
             }
         }

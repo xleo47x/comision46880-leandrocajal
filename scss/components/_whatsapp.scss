@@ -7,8 +7,8 @@
         line-height: 55px;
         bottom: 30px;
         right: 30px;
-        background-color: #25d366;
-        color: #FAF1E4;
+        background-color: $color-t-1;
+        color: $color-t-2;
         border-radius: 50px;
         text-align: center;
         font-size: 35px;
@@ -17,8 +17,8 @@
         transition: transform 0.3s, color 0.3s, background-color 0.3s, font-size 0.3s;
         &:hover{
             text-decoration: none;
-            color: #25d366;
-            background-color:#FAF1E4;
+            color: $color-t-1;
+            background-color:$color-t-2;
             transform: scale(1.1);
             font-size: 40px; 
         }

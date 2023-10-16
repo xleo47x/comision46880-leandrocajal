@@ -1,3 +1,21 @@
+
+
+%estilos-contacto {
+    background-color:$color-t-2;
+    padding: 16px 22px; 
+    margin-bottom: 25px;
+    font-size:map-get($font-size , xs );
+    display: flex;
+    border: solid 2px $color-t-4;
+}
+%estilos-contacto-2 {
+    color:$color-t-4;
+    font-size: map-get($font-size , xxs );
+    font-weight:lighter;
+    text-transform: uppercase;
+}
+
+                    
 .contact-container{
     display: flex;
     align-items: center;
@@ -9,12 +27,11 @@
         display: flex;
         flex-direction: column;
         padding: 50px; 
-        font-size: 18px;
-        backdrop-filter: blur(10px);
+        font-size: map-get($font-size , xs );
         .form-title{
             text-align: center;
             margin-bottom: 25px;
-            color: #333;
+            color: $bg-color-1;
             font-family: 'Roboto', cursive;
             text-transform: uppercase;
         }
@@ -23,49 +40,33 @@
             flex-direction: column;
             input{
                 &:not(.btn-form){
-                    background-color:#ffffff;
-                    padding: 16px 22px; 
-                    margin-bottom: 25px;
-                    font-size: 18px;
-                    display: flex;
-                    border: solid 2px #979797;
+                    @extend %estilos-contacto;
                 }
                 &::placeholder{
-                    color:#979797;
-                    font-size: 16px;
-                    font-weight:lighter;
-                    text-transform: uppercase;
+                    @extend %estilos-contacto-2;
                 }
             }
             textarea{
-                background-color:#ffffff;
-                padding: 16px 22px; 
-                margin-bottom: 25px;
-                font-size: 18px;
-                display: flex;
-                border: solid 2px #979797;
+                @extend %estilos-contacto;
                 &::placeholder{
-                    color:#979797;
-                    font-size: 16px;
-                    font-weight:lighter;
-                    text-transform: uppercase;
+                    @extend %estilos-contacto-2;
                 }
             }
             .btn-form {
-                background-color:#ffffff;
-                color:green;
+                background-color:$color-t-2;
+                color:$color-t-1;
                 padding: 10px 10px;
                 cursor: pointer;
                 transition: background-color 0.3s, color 0.3s;
-                font-size: 20px;
+                font-size: map-get($font-size , s );
                 font-weight: 600;
-                border: solid 2px green;
+                border: solid 2px $color-t-1;
                 text-transform: uppercase;
                 width: 120px;
                 align-self: center;
                 &:hover {
-                    background-color:green;
-                    color:#ffffff;
+                    background-color:$color-t-1;
+                    color:$color-t-2;
                 }
             }
         }

@@ -4,7 +4,7 @@
     .carousel-inner{
         .carousel-item{
             img {
-                min-height: 1000px;
+                min-height: 800px;
                 object-fit: cover;
             }
         }
@@ -32,7 +32,7 @@
                 h2{
                     font-size: 25px;
                     text-align: center;
-                    color: #9EB384;
+                    color: $color-t-1;
                     padding: 40px 0px;
                 }
             }
@@ -46,13 +46,13 @@
                     text-align: center;
                 }
                 .leer-mas a{
-                    color: #000000;
+                    color: $color-t-1;
                     font-size: 20px;
                     text-decoration: underline;
                     transition: color 0.2s;
                     &:hover{
-                        color:#9EB384;
-                        border-color: #9EB384;
+                        color:$bg-color-2;
+                        border-color:$bg-color-2;
                     }
                 }
             }
@@ -60,7 +60,7 @@
         .description-img{
             width: 600px;
             height: 600px;
-            background-color: #43533470;
+            background-color: $bg-color-2;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -77,10 +77,11 @@
 /*Seccion galeria de index*/
 .galeria-index{
     display: flex;
+    @include flex(row,nowrap,center,center,none);
     padding: 60px 0px;
     justify-content: center;
     align-items: center;
-    background-color:#333;
+    background-color:$bg-color-1;
     flex-wrap: nowrap;
     position: relative;
     z-index: 1;
@@ -90,7 +91,7 @@
         text-align: center;
         font-size: 6rem;
         font-weight: bold;
-        color:#333;
+        color:$color-t-3;
         text-decoration: none;
         position: absolute;
         left: 35%;
@@ -120,7 +121,7 @@
         font-size: 40px;
         font-weight: bold;
         text-transform: capitalize;
-        color: #333;
+        color: $color-t-3;
         text-align: center;
         padding-top: 85px;
         text-transform: capitalize;
@@ -128,12 +129,12 @@
 }
 .card-container{
     padding: 100px 0px;
-    justify-content: center;
     display: flex;
+    @include flex(row,wrap,center,none,60px);
+    justify-content: center;
     flex-wrap: wrap;
-    gap:60px;
     .cards{
-        background-color:#FAF1E4;
+        background-color:$color-t-2;
         width: 400px;
         height: 500px;
         border-radius: 10px;
@@ -145,7 +146,7 @@
         }
         .index-card-title{
             background-color: rgba(255, 255, 255, 0.3);
-            color:#333;
+            color:$bg-color-1;
             font-size: 1.5rem;
             position: absolute;
             left: 26%;
@@ -165,11 +166,11 @@
             left: 35%;
             a{
                 .card-inside-btn{
-                    background-color: #435334;
+                    background-color:$color-t-1;
                     padding: 9px 20px;
                     font-size: 18px;
                     font-weight: 700;
-                    color: #FAF1E4;
+                    color: $color-t-2;
                     border: none;
                     border-radius: 8 px;
                     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -191,7 +192,7 @@
     position: relative;
     padding-bottom: 50px;
     font-family: 'oswald' sans-serif;
-    background-color: #333;
+    background-color: $bg-color-1;
     overflow-x: hidden;
     .row{
         .testimonials-title{
@@ -199,13 +200,13 @@
             font-weight: bold;
             margin-top: 50px;
             text-transform: capitalize;
-            color:#25d366;
+            color:$bg-color-2;
         }
         .testimonials-subtitle{
             font-size: 25px;
             margin-top: 15px;
             text-transform: capitalize;
-            color:#FAF1E4;
+            color:$color-t-2;
             text-align: center;
         }
     }
@@ -236,7 +237,7 @@
                         left: 15%;
                         bottom: 50px;
                         padding: 50px 0;
-                        color: #FAF1E4;
+                        color: $color-t-2;
                         .testimonial-name{
                             font-size: 25px;
                             font-weight: 400;
@@ -244,7 +245,7 @@
                         }
                         .testimonial-icon{
                             font-size: 40px;
-                            color:#25d366;
+                            color:$bg-color-2;
                             margin-top: -5px;
                             margin-right: 5px;
                         }
